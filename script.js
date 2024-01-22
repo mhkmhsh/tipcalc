@@ -10,10 +10,12 @@ function calculateAndDisplay()
     let amtPerPers = calculateAmtPerPers(totalBill, numOfPpl)
 }
 
-// display the results in HTML document
-document.getElementById("tipResult").innerText = 'Tip: $' + tip.toFixed(2)
-
-
+ // Display the results in the HTML document
+ document.getElementById('tipResult').innerText = 'Tip: $' + tip.toFixed(2)
+ document.getElementById('totalBillResult').innerText =
+   'Total Bill: $' + totalBill.toFixed(2)
+ document.getElementById('amtPerPersonResult').innerText =
+   'Amount per person: $' + amtPerPers.toFixed(2)
 
 
 
